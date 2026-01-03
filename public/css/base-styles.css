@@ -1,0 +1,107 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 0;
+     margin: 0;
+     background-image: url("../images/base-background.png");
+     background-color: #faf5e6;
+     line-height: 1.5;
+     overflow-y: hidden;
+ }
+
+ h1,
+ h2,
+ h3,
+ .script-font {
+     font-family: 'Great Vibes', cursive;
+     font-weight: 400;
+ }
+
+ .font-extra-big {
+     margin: 1em 0;
+     font-size: 3em;
+ }
+
+ .font-big {
+     font-size: 2em;
+ }
+
+ .font-medium {
+     font-size: 1.2em;
+ }
+
+ .text-bold {
+     font-weight: bold;
+ }
+
+
+ .text-center {
+     text-align: center;
+ }
+
+ .mb-1 {
+     margin-bottom: 1em;
+ }
+
+ .mb-15 {
+     margin-bottom: 1.5em;
+ }
+
+ .mb-2 {
+     margin-bottom: 2em;
+ }
+
+ .mb-3 {
+     margin-bottom: 3em;
+ }
+
+ .ma-3 {
+     margin: 3em;
+ }
+
+ .mh-1 {
+     margin-left: 1em;
+     margin-right: 1em;
+ }
+
+ .mh-2 {
+     margin-left: 2em;
+     margin-right: 2em;
+ }
+
+ .mh-3 {
+     margin-left: 3em;
+     margin-right: 3em;
+ }
+
+ .mv-1 {
+     margin-top: 1em;
+     margin-bottom: 1em;
+ }
+
+ .mv-2 {
+     margin-top: 2em;
+     margin-bottom: 2em;
+ }
+
+ .mv-3 {
+     margin-top: 3em;
+     margin-bottom: 3em;
+ }
+
+ hr.dashed {
+     border: none;
+     border-top: 1px dashed #9a9a9a;
+ }
+
+ /* FORM */
+ .form-input {
+     padding: 0.7rem;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     width: 100%;
+     box-sizing: border-box;
+ }

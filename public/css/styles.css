@@ -1,0 +1,374 @@
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.container {
+    padding: 2.5em;
+}
+
+/* Sections Start */
+
+/* Cover Section */
+
+.cover-section {
+    height: 100vh;
+    background-image: url("../images/cover-bg.png");
+    background-color: #faf5e6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.cover-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header Section */
+.header-section {
+    background: linear-gradient(to bottom, #ded389, rgb(232, 220, 179));
+
+    background-color: #ded389;
+    padding: 5rem 0;
+}
+
+/* Couple Section */
+.couple-section {
+    background-image: url("../images/couple-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.person {
+    border-radius: 15px;
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.person:hover {
+    transform: translateY(-5px);
+}
+
+.person img {
+    border-radius: 24%;
+    border: 8px solid white;
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.photo-overlay {
+    position: absolute;
+    left: 15%;
+    z-index: 2;
+}
+
+/* 💕 Story Section */
+.story-section {
+    background-color: #cad1c6;
+    padding: 5rem 0;
+}
+
+/* 🌸 Venue Section */
+.venue-section {
+    padding: 2rem 0;
+    background-image: url("../images/date-bg.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.venue-content {
+    border-style: double;
+    border-radius: 16px 100px 16px 100px;
+    border-color: #ded389;
+    padding: 1.5em;
+    margin: 2em;
+}
+
+.date-container {
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.date-container-date {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.date-container-detail {
+    border-left: 2px dashed #9a9a9a;
+    padding-left: 1.4em;
+}
+
+/* gift section */
+.gift-section {
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+/* wishes section */
+.wishes-section {
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+.wishes-container {
+    max-height: 400px;
+    overflow-y: scroll;
+    border: 1px dashed #ccc;
+    padding: 1.5em;
+    border-radius: 16px;;
+}
+
+/* footer section */
+.footer-section {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #cad1c6;
+    font-style: italic;
+}
+
+.image-footer {
+    width: 300px;
+    margin-top: 3em;
+    border: 3px dotted white;
+    border-radius: 16px;
+}
+
+/* Sections End */
+
+.nama-undangan {
+    font-weight: bold;
+    margin: 2em auto;
+    width: 90%;
+    height: 130px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-btn {
+    background-color: #7d9971;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.base-btn:hover {
+    background-color: #5f7b56;
+    transform: scale(1.05);
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 10;
+        transform: translateY(20px);
+        display: none;
+    }
+}
+
+/* Scroll Reveal Animation */
+
+.hide {
+    animation: hide 0.3s ease forwards;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeIn 2s ease backwards;
+}
+
+/* countdown */
+.countdown {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.countdown-box {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    width: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* debit card styles */
+
+#debet-cards {
+    display: none;
+    margin-top: 1.5em;
+}
+
+.debet-card {
+    box-sizing: inherit;
+    margin-inline: auto;
+    max-width: 390px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #a6c9ec, #76b7e2);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.debet-card-logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.debet-card-logo img{
+    max-width: 72px;
+}
+
+.debet-card-chip {
+    width: 50px;
+    height: 35px;
+    background: rgb(247, 226, 109);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.debet-card-number {
+    margin-top: 20px;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+
+.debet-card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* music button */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        /* Starting rotation */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Ending rotation (one full turn) */
+    }
+}
+
+.rotate {
+    animation: spin 10s linear infinite;
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.music-btn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.music-btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.music-btn .music-indicator {
+    position: absolute;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.418);
+    color: #fbfbfb;
+}
